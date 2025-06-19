@@ -116,3 +116,11 @@ export LS_COLORS="ow=01;34"
 #configs for homebrew:
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 export PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"
+
+# fzf key bindings and completion
+# Ctrl+T - searches from current directory recursively
+# Alt+C - searches directories to cd into (from current location)
+# Ctrl+R - searches your entire command history (not directory-specific)
+source $(brew --prefix fzf)/shell/key-bindings.zsh
+source $(brew --prefix fzf)/shell/completion.zsh
+
