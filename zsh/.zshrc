@@ -112,6 +112,13 @@ export PATH=$HOME/.local/bin:$PATH
 alias ls="lsd"
 export LS_COLORS="ow=01;34"
 
+# Redis server management via systemd 
+alias redis-start="sudo systemctl start redis-server"
+alias redis-stop="sudo systemctl stop redis-server"
+alias redis-restart="sudo systemctl restart redis-server"
+alias redis-status="sudo systemctl status redis-server"
+alias redis-active="sudo systemctl is-active redis-server"
+
 
 #configs for homebrew:
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
