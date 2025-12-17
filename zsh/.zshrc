@@ -131,3 +131,7 @@ export PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"
 source $(brew --prefix fzf)/shell/key-bindings.zsh
 source $(brew --prefix fzf)/shell/completion.zsh
 
+#alis for calling lazy git in current directory
+alias lg='lazygit -p "$(pwd)"'
+
+
