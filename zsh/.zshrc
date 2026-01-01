@@ -134,4 +134,12 @@ source $(brew --prefix fzf)/shell/completion.zsh
 #alis for calling lazy git in current directory
 alias lg='lazygit -p "$(pwd)"'
 
-
+#aliases for go development
+alias Grm='go run main.go'
+alias Gv='go vet ./...'
+alias Gt='go test ./...'
+alias Gtd='go test .'
+alias Gmt='go mod tidy'
+alias Gmi='go mod init'
+alias Gi='go install'
+alias Gcheck='go fmt ./... && go vet ./... && go test ./...'
