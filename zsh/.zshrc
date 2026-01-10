@@ -136,6 +136,7 @@ alias lg='lazygit -p "$(pwd)"'
 
 #aliases for go development
 alias Grm='go run main.go'
+alias Grd='go run .'
 alias Gb='go build'
 alias Gv='go vet ./...'
 alias Gt='go test ./...'
