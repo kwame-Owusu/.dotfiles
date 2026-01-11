@@ -146,3 +146,9 @@ alias Gmi='go mod init'
 alias Gi='go install'
 alias Gg='go get'
 alias Gcheck='go fmt ./... && go vet ./... && go test ./...'
+
+
+#aliases for postgres
+alias postgres-start='sudo systemctl start postgresql'
+alias postgres-stop='sudo systemctl stop postgresql'
+alias psql-connect='sudo -u postgres psql' #connect psql as client to postgres server
