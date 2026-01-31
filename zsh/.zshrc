@@ -152,3 +152,11 @@ alias Gcheck='go fmt ./... && go vet ./... && go test ./...'
 alias postgres-start='sudo systemctl start postgresql'
 alias postgres-stop='sudo systemctl stop postgresql'
 alias psql-connect='sudo -u postgres psql' #connect psql as client to postgres server
+
+
+# golang env
+export GOROOT=/usr/local/go
+export GOPATH=$HOME/go
+export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
+
+
