@@ -1,0 +1,22 @@
+brewfile: ./Brewfile
+reminder: 14
+machines:
+  shared:
+    taps:
+      - kwame-owusu/taps
+    formulae:
+      - eza
+      - fzf
+      - git
+      - jq
+      - lazygit
+      - neovim
+      - node
+      - python@3.14
+      - shellcheck
+      - tmux
+      - tree-sitter
+  personal:
+    formulae: []
+  work:
+    formulae: []
