@@ -2,8 +2,8 @@
 
 set -euo pipefail
 
-width=${2:-80%}
-height=${2:-80%}
+width=${2:-90%}
+height=${2:-90%}
 
 # Get the tmux pane's working directory (if inside tmux)
 if [[ -n "${TMUX:-}" ]]; then
