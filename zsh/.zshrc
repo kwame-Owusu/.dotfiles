@@ -112,6 +112,7 @@ alias reload-zsh='source ~/.zshrc'
 # aliases for eza
 alias ls="eza --icons"
 alias l='eza -lh --icons'
+alias la='eza -a'
 
 alias cat="bat"
 
