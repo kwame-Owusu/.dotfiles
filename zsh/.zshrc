@@ -108,17 +108,15 @@ alias reload-zsh='source ~/.zshrc'
 # Generated for envman. Do not edit.
 [ -s "$HOME/.config/envman/load.sh" ] && source "$HOME/.config/envman/load.sh"
 
-#config for lsd
-export PATH=$HOME/.local/bin:$PATH
-#aliases for lsd
-alias ls="lsd"
-export LS_COLORS="ow=01;34"
+
+# aliases for eza
+alias ls="eza --icons"
+alias l='eza -lh --icons'
 
 alias cat="bat"
 
 
-
-#configs for homebrew:
+# configs for homebrew:
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 export PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"
 
@@ -150,3 +148,4 @@ export PATH="/home/linuxbrew/.linuxbrew/opt/clang-format/bin:$PATH"
 
 # tmux alias
 alias tmux-dev='~/scripts/tmux/tmux-dev-session.sh'
+
