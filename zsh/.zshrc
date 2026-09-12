@@ -103,6 +103,8 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+alias reload-zsh='source ~/.zshrc'
+
 # Generated for envman. Do not edit.
 [ -s "$HOME/.config/envman/load.sh" ] && source "$HOME/.config/envman/load.sh"
 
@@ -112,12 +114,8 @@ export PATH=$HOME/.local/bin:$PATH
 alias ls="lsd"
 export LS_COLORS="ow=01;34"
 
-# Redis server management via systemd 
-alias redis-start="sudo systemctl start redis-server"
-alias redis-stop="sudo systemctl stop redis-server"
-alias redis-restart="sudo systemctl restart redis-server"
-alias redis-status="sudo systemctl status redis-server"
-alias redis-active="sudo systemctl is-active redis-server"
+alias cat="bat"
+
 
 
 #configs for homebrew:
@@ -125,19 +123,14 @@ eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 export PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"
 
 # fzf key bindings and completion
-# Ctrl+T - searches from current directory recursively
-# Alt+C - searches directories to cd into (from current location)
-# Ctrl+R - searches your entire command history (not directory-specific)
 source $(brew --prefix fzf)/shell/key-bindings.zsh
 source $(brew --prefix fzf)/shell/completion.zsh
 
-#alis for calling lazy git in current directory
+#config for calling lazy git in current directory
 alias lg='lazygit -p "$(pwd)"'
 
 #aliases for go development
 alias Grm='go run main.go'
-alias Grd='go run .'
-alias Gb='go build'
 alias Gv='go vet ./...'
 alias Gt='go test ./...'
 alias Gtd='go test .'
@@ -148,18 +141,12 @@ alias Gg='go get'
 alias Gcheck='go fmt ./... && go vet ./... && go test ./...'
 
 
-#aliases for postgres
-alias postgres-start='sudo systemctl start postgresql'
-alias postgres-stop='sudo systemctl stop postgresql'
-alias psql-connect='sudo -u postgres psql' #connect psql as client to postgres server
-
-
-# golang env
-export GOROOT=/usr/local/go
-export GOPATH=$HOME/go
-export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
-
-#opencode
+# opencode
+export PATH=/home/kwame/.opencode/bin:$PATH
 alias oc='opencode'
 
 
+export PATH="/home/linuxbrew/.linuxbrew/opt/clang-format/bin:$PATH"
+
+# tmux alias
+alias tmux-dev='~/scripts/tmux/tmux-dev-session.sh'
